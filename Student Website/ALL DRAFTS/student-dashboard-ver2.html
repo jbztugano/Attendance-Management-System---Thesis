@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Student</title>
+    <style>
+        .main-body {
+            margin: 0px 0px;
+        }
+        .header-container {
+            background-color: rgb(156,44,44);
+            color: white;
+            width: 100%;
+            height: 172px;
+            display: flex;
+            flex-direction: row;
+            margin: 0px 0px;
+        }
+        .logo-div {
+            margin-top: 30px;
+        }
+        .logo-LPU {
+            height: 100px;
+            width: 100px;
+        }
+        .header-subheader {
+            padding-bottom: 20px;
+        }
+        .header {
+            font-weight: 600;
+            font-size: 45px;
+            margin-bottom: 0px;
+            margin-top: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .subheader {
+            margin-top: 2px;
+            font-size: 25px;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+        }
+        .header-basement {
+            width: 100%;
+            height: 57px;
+            background-color: rgb(192,91,91);
+            margin: 0px;
+        }
+        /* .sidebar {
+            display: flex;
+            flex-direction: column;
+            width: 245px;
+            height: 700px;
+            justify-content: space-evenly;
+        } */
+        .sidebar {
+            position: fixed;
+            top: 250px;
+            left: 0;
+            bottom: 0;
+            width: 245px;
+            height: 480px;
+            /* height: 100vh; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 999;
+            /* padding-top: 200px; */
+        }
+        .sidebar-buttons {
+            height: 63px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: rgb(225,214,118);
+            justify-content: center;
+            align-items: center;
+            /* padding-left: 100px;
+            padding-right: 100px; */
+        }
+        .sidebar-buttons:hover {
+            background-color: rgb(187, 178, 99);
+        }
+        .sidebar-buttons:active{
+            opacity: 0.85;
+        }
+
+    </style>
+</head>
+<body class="main-body">
+    <h1 class="header-container">
+        <div class="logo-div">
+            <img class="logo-LPU" src="Images/LPU Logo White.png">
+        </div>
+        <div class="header-subheader">
+            <p class="header">
+                Center for Sports Development
+                <p class="subheader">
+                    Lyceum of the Philippines University - Cavite
+                </p>
+            </p>
+        </div>
+    </h1>
+    <h2 class="header-basement"></h2>
+    <div class="sidebar">
+        <div class="sidebar-link">
+            <button class="sidebar-buttons">DASHBOARD</button>
+        </div>
+        <div class="sidebar-link">
+            <button class="sidebar-buttons">MY PE CLASSES</button>
+        </div>
+        <div class="sidebar-link">
+            <button class="sidebar-buttons">ATTENDANCE RECORDS</button>
+        </div>
+        <div class="sidebar-link">
+            <button class="sidebar-buttons">NOTIFICATIONS</button>
+        </div>
+        <div class="sidebar-link">
+            <button class="sidebar-buttons">SETTINGS</button>
+        </div>
+        <div class="sidebar-link">
+            <button class="sidebar-buttons">LOGOUT</button>
+        </div>
+
+    </div>
+</body>
+</html>
